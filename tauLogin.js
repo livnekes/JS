@@ -21,6 +21,7 @@ javascript:(function(){
     return;
   }
   else{
+    window.location = "https://idp.tau.ac.il/nidp/saml2/sso";
     console.log("The site is not supported!");
   }
 })();
