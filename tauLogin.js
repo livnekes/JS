@@ -2,6 +2,10 @@ javascript:(function(){
   username="";
   password="";
   id="";
+  if (document.URL.indexOf('tau.ac.il')==-1){
+    window.location='https://idp.tau.ac.il/nidp/saml2/sso';
+    return;
+  }
   var e=document.getElementsByName("frmlogin");
   if(e!=null&&e.length==1){
     document.getElementsByName("txtUser")[0].value=username;
@@ -25,6 +29,4 @@ javascript:(function(){
       return;
     }
   }
-  console.log("The site is not supported!");
-  window.location='https://idp.tau.ac.il/nidp/saml2/sso';
 })();
