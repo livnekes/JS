@@ -3,7 +3,7 @@ javascript:(function(){
   password="";
   id="";
   if (document.URL.indexOf('tau.ac.il')==-1){
-    window.location='https://idp.tau.ac.il/nidp/saml2/sso';
+    window.location='https://moodle.tau.ac.il/login/index.php';
     return;
   }
   var e=document.getElementsByName("frmlogin");
